@@ -59,6 +59,24 @@ pub fn run(config: Config) -> Result<(), Box<Error>> {
 // In this case, we indicate that the returned vector 
 // should contain string slices that reference slices of the argument contents 
 // (rather than the argument query)
+
+/// Searchs query in the given contents collection.
+///
+/// # Examples
+///
+/// ```
+///  let query = "duct";
+///         let contents = "\
+/// Rust:
+/// safe, fast, productive.
+/// Pick three.
+/// Duct tape.";
+
+///        assert_eq!(
+///             vec!["safe, fast, productive."],
+///            search(query, contents)
+///        );
+/// ```
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     // let mut results = Vec::new();
 
