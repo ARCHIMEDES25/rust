@@ -1,0 +1,6 @@
+[package]
+name = "hello_server"
+version = "0.1.0"
+authors = ["luisurrea2016# <luis.urrea@motortrak.com>"]
+
+[dependencies]
